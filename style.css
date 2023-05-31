@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: linear-gradient(250deg, #df2929 70%, #000 0);
+    padding: 0 100px;
+}
+
+.headerleft ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.headerleft ul li {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.headermid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headermid input {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, .32941176470588235);
+}
+
+.headermid button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background: #000;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.headerright {
+    font-size: 33px;
+    text-transform: uppercase;
+}
+
+
+
+.movieheading {
+    padding: 0 40px;
+    position: relative;
+}
+
+.movieheading h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.movieheading ::before {
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 3px;
+    background: #df2929;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.moviewrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.leftwrap {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.singleMovie {
+    width: 210px;
+    height: 280px;
+    margin: 15px 5px;
+}
+
+.singleMovie a {
+    text-decoration: none;
+}
+
+.singleMovie img {
+    width: 100%;
+    height: 70%;
+}
+
+.poptext h2 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.poptext span {
+    font-size: 12px;
+    font-weight: 300;
+    color: #000;
+}
+
+
+.rightwrap {
+    width: 30%;
+    padding: 0 60px;
+}
+
+.singleitem {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.singleitem a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.singleitem img {
+    width: 30%;
+    height: 100px;
+}
+
+.uptext {
+    padding: 0 10px;
+}
+
+.uptext h2 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1310px) {
+    .singleitem img {
+        height: 80px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .singleitem img {
+        height: 68px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .singleitem img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        height: 90px;
+        padding: 0 40px;
+    }
+
+    .rightwrap {
+        padding: 0 27px;
+    }
+}
+
+@media (max-width: 850px) {
+    header {
+        height: 85px;
+        padding: 0 5px;
+    }
+
+    .headerright {
+        font-size: 27px;
+    }
+
+    .leftwrap {
+        width: 60%;
+    }
+
+    .rightwrap {
+        width: 40%;
+    }
+
+    .singleitem img {
+        height: 75px;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        height: 60px;
+    }
+
+    .headerleft ul li {
+        margin: 0 10px;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    .headerright {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 730px) {
+    .movieheading {
+        padding: 0 30px;
+    }
+
+    .movieheading h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .singleMovie {
+        width: 177px;
+        height: 248px;
+    }
+}
+
+@media (max-width: 620px) {
+    header {
+        height: 50px;
+    }
+
+    .headerleft ul li {
+        margin: 0 10px;
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+
+    .headermid input {
+        width: 140px;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    .headerright {
+        font-size: 18px;
+    }
+
+    .headermid button {
+        width: 26px;
+        height: 24px;
+        font-size: 11px;
+        margin-left: 3px;
+    }
+
+    .singleMovie {
+        width: 170px;
+        height: 217px;
+    }
+
+    .singleitem img {
+        height: 56px;
+    }
+}
+
+@media (max-width: 599px) {
+    .movieheading {
+        padding: 0 14px;
+    }
+
+    .movieheading h3 {
+        font-size: 17px;
+    }
+
+    .movieheading ::before {
+        height: 47%;
+        width: 2px;
+        left: 7px;
+    }
+
+    .singleMovie {
+        width: 150px;
+        height: 180px;
+    }
+
+    .uptext h2,
+    .uptext span {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 530px) {
+    .leftwrap {
+        justify-content: center;
+    }
+
+    .singleMovie {
+        width: 278px;
+        height: 285px;
+    }
+
+    .singleitem a {
+        flex-direction: column;
+    }
+
+    .singleitem img {
+        width: 44%;
+    }
+
+    .uptext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 430px) {
+    header {
+        height: 38px;
+    }
+
+    .headerleft ul li {
+        margin: 0 5px;
+        font-size: 13px;
+    }
+
+    .headermid input {
+        width: 113px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .headermid button {
+        width: 20px;
+        height: 20px;
+        font-size: 9px;
+    }
+
+    .headerright {
+        font-size: 14px;
+    }
+
+    .rightwrap {
+        padding: 0 16px;
+    }
+
+    .uptext h2 {
+        text-align: center;
+    }
+
+    .singleitem img {
+        width: 65%;
+        height: 68px;
+    }
+}
+
+@media (max-width: 400px) {
+    .headermid input {
+        width: 83px;
+        height: 18px;
+        font-size: 8px;
+    }
+    .headermid button {
+        width: 18px;
+        height: 18px;
+        font-size: 8px;
+    }
+    .singleMovie {
+        height: 255px;
+    }
+}
+
+@media (max-width: 350px) {
+    .headermid input {
+        width: 83px;
+        height: 18px;
+        font-size: 8px;
+    }
+    .singleMovie {
+        height: 226px;
+    }
+
+    .singleitem img {
+        width: 85%;
+        height: 68px;
+    }
+}

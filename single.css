@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: linear-gradient(250deg, #df2929 70%, #000 0);
+    padding: 0 100px;
+}
+
+.headerleft ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.headerleft ul li {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.headerleft ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.headermid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headermid input {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, .32941176470588235);
+}
+
+.headermid i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background: #000;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.headerright {
+    font-size: 33px;
+    text-transform: uppercase;
+}
+
+.fullmovie {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.movieTopWrap {
+    width: 70%;
+}
+
+.singlecontent {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.movieImg {
+    width: 220px;
+    height: 280px;
+}
+
+.movieImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.singletext {
+    padding: 15px;
+}
+
+.movieName {
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.movieDate {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.catagory {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.catagory li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.catagory li:first-child {
+    margin: 0;
+}
+
+
+.moviinfo {
+    padding: 25px;
+}
+
+.infoheading {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.Synopsis h3 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.movieoverview {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.allposter {
+    padding: 25px;
+}
+
+.posters {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.posters img {
+    margin-top: 10px;
+}
+
+.Recommened {
+    width: 30%;
+}
+
+.Recommenedwrap {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.singleitem {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.singleitem a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.singleitem img {
+    width: 30%;
+    height: 100px;
+}
+
+.uptext {
+    padding: 0 10px;
+}
+
+.uptext h2 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1250px) {
+    .singleitem img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 1190px) {
+    header {
+        height: 80px;
+        padding: 0 36px;
+    }
+
+    .headerright {
+        font-size: 30px;
+    }
+
+    .singleitem img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 950px) {
+    header {
+        height: 63px;
+        padding: 0 10px;
+    }
+
+    .headerleft ul li {
+        margin: 0 9px;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .headermid input {
+        width: 190px;
+        height: 28px;
+        font-size: 15px;
+    }
+
+    .headermid i {
+        width: 27px;
+        height: 27px;
+        font-size: 11px;
+        margin-left: 4px;
+    }
+
+    .headerright {
+        font-size: 23px;
+    }
+
+    .singleitem a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .uptext h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 770px) {
+    header {
+        height: 54px;
+    }
+
+    .headermid input {
+        width: 149px;
+        height: 26px;
+        font-size: 14px;
+    }
+
+    .headermid i {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        margin-left: 3px;
+    }
+
+    .singlecontent {
+        padding: 15px;
+    }
+
+    .movieImg {
+        width: 200px;
+        height: 224px;
+    }
+
+    .movieName {
+        font-size: 29px;
+        font-weight: 600;
+    }
+
+    .Recommenedwrap {
+        padding: 10px;
+    }
+
+    .Recommenedwrap h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .infoheading {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .moviinfo,
+    .allposter {
+        padding: 15px;
+    }
+
+    .posters img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .posters img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        height: 48px;
+    }
+
+    .headerleft ul li {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .headermid input {
+        width: 131px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .headermid i {
+        width: 24px;
+        height: 24px;
+        font-size: 10px;
+        margin-left: 2px;
+    }
+
+    .headerright {
+        font-size: 19px;
+    }
+
+    .singlecontent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .movieImg {
+        width: 265px;
+        height: 265px;
+    }
+
+    .movieDate {
+        padding: 0;
+    }
+
+    .Recommenedwrap h3 {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .singleitem {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 40px;
+    }
+
+    .headerleft ul li {
+        margin: 0 4px;
+        font-size: 12px;
+    }
+
+    .headermid input {
+        width: 106px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .headermid i {
+        width: 20px;
+        height: 20px;
+        font-size: 5px;
+        margin-left: 2px;
+    }
+
+    .headerright {
+        font-size: 16px;
+    }
+
+    .Recommenedwrap h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .headerleft ul li {
+        margin: 0 4px;
+        font-size: 11px;
+    }
+
+    .headerright {
+        font-size: 13px;
+    }
+
+    .singlecontent,
+    .moviinfo,
+    .allposter {
+        padding: 10px;
+    }
+
+    .movieImg {
+        width: 240px;
+        height: 240px;
+    }
+
+    .singletext {
+        padding: 10px;
+    }
+
+    .movieName {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .infoheading {
+        font-size: 14px;
+    }
+
+    .Synopsis h3 {
+        font-size: 14px;
+        padding: 0px;
+        margin-top: 8px;
+    }
+
+    .movieoverview {
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    .Recommenedwrap h3 {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .singleitem img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .uptext h2 {
+        font-size: 11px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 350px) {
+    header {
+        height: 35px;
+    }
+
+    .headerleft ul li {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .headerleft ul li:nth-child(2) {
+        margin-left: 4px;
+    }
+
+    .headermid input {
+        width: 77px;
+    }
+
+    .headerright {
+        font-size: 12px;
+    }
+
+    .movieImg {
+        width: 210px;
+        height: 210px;
+    }
+
+    .movieName {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
