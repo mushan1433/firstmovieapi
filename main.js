@@ -27,7 +27,7 @@ axios.get("https://api.themoviedb.org/3/movie/popular?api_key=1413f426e96bd33478
     console.log(res.data.results);
     leftwrap.innerHTML = res.data.results.map(val => {
         return `<div class="singleMovie">
-                <a href="/singleMovie.html?id=${val.id}">
+                <a href="/firstmovieapi/singleMovie.html?id=${val.id}">
                 <img src="https://image.tmdb.org/t/p/w500${val.backdrop_path}">
                 <div class="poptext">
                 <h2>${val.title}</h2>
@@ -45,7 +45,7 @@ axios.get("https://api.themoviedb.org/3/movie/upcoming?api_key=1413f426e96bd3347
     console.log(res.data.results);
     upcomeing.innerHTML = res.data.results.splice(0, 9).map(val => {
         return `<div class="singleitem">
-                <a href="/singleMovie.html?id=${val.id}">
+                <a href="/firstmovieapi/singleMovie.html?id=${val.id}">
                 <img src="https://image.tmdb.org/t/p/w500${val.backdrop_path}">
                 <div class="uptext">
                 <h2>${val.title}</h2>
